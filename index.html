@@ -113,7 +113,6 @@
             border-radius: 5px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             min-width: 150px;
-            margin-top: 0.5rem;
         }
 
         .dropdown-menu li {
@@ -137,7 +136,8 @@
             display: none;
         }
 
-        .dropdown:hover .dropdown-menu {
+        .dropdown:hover .dropdown-menu,
+        .dropdown:focus-within .dropdown-menu {
             display: block;
         }
 
@@ -594,7 +594,7 @@
                 <li><a href="#location">Location</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Photos & Videos ▾</a>
+                    <a href="pages/photos.html" class="dropdown-toggle">Photos & Videos ▾</a>
                     <ul class="dropdown-menu">
                         <li><a href="pages/photos.html">Photos</a></li>
                         <li><a href="pages/videos.html">Videos</a></li>
