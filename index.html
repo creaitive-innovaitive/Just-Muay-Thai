@@ -536,12 +536,62 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            nav {
+                padding: 0.75rem 1.25rem;
+            }
+
+            .logo {
+                font-size: 1.15rem;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: var(--black);
+                border-top: 1px solid var(--dark-gray);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links > li > a {
+                display: block;
+                padding: 1rem 1.5rem;
+                border-bottom: 1px solid var(--dark-gray);
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .dropdown-menu {
+                display: block;
+                position: static;
+                box-shadow: none;
+                padding: 0;
+                background: var(--dark-gray);
+            }
+
+            .dropdown-menu a {
+                padding: 0.9rem 2.5rem;
             }
 
             .mobile-menu {
                 display: flex;
+                padding: 0.5rem;
             }
 
             .hero h1 {
@@ -782,8 +832,10 @@
         const navLinks = document.querySelector('.nav-links');
         
         mobileMenu.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            navLinks.classList.toggle('open');
         });
+
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
         // Hero slideshow
         const slides = document.querySelectorAll('.hero-bg img');
