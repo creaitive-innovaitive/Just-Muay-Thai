@@ -269,6 +269,72 @@
             aspect-ratio: 3 / 4;
         }
 
+        /* Desktop: tabs instead of collapsible groups */
+        .gallery-tabs {
+            display: none;
+        }
+
+        .tabs-mode .gallery-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding: 0 2rem;
+            border-bottom: 1px solid var(--dark-gray);
+        }
+
+        .gallery-tabs button {
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            color: var(--light-gray);
+            font: inherit;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.9rem 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .gallery-tabs button:hover {
+            color: var(--white);
+        }
+
+        .gallery-tabs button[aria-selected="true"] {
+            color: var(--white);
+            border-bottom-color: var(--primary-red);
+        }
+
+        .gallery-tabs .count {
+            margin-left: 0.4rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--light-gray);
+        }
+
+        .tabs-mode .gallery-section {
+            display: none;
+        }
+
+        .tabs-mode .gallery-section.active {
+            display: block;
+            padding: 2rem;
+        }
+
+        .tabs-mode .gallery-group {
+            background: none;
+            border-radius: 0;
+        }
+
+        .tabs-mode .gallery-group summary {
+            display: none;
+        }
+
+        .tabs-mode .gallery-group .gallery-grid {
+            padding: 0;
+        }
+
         /* Footer */
         footer {
             background: var(--black);
@@ -388,6 +454,8 @@
     </div>
 
     <!-- Gallery Section -->
+    <div class="gallery-tabs" role="tablist"></div>
+
     <section class="gallery-section">
         <details class="gallery-group">
             <summary><span class="title">World Amateur Championships <span>2026</span></span><span class="count">30 photos</span></summary>
@@ -819,6 +887,37 @@
         });
 
         navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+        // Desktop shows the groups as tabs; mobile keeps them as collapsible sections
+        const sections = [...document.querySelectorAll('.gallery-section')];
+        const tabBar = document.querySelector('.gallery-tabs');
+        const desktop = window.matchMedia('(min-width: 769px)');
+        let activeTab = 0;
+
+        sections.forEach((sec, i) => {
+            const btn = document.createElement('button');
+            btn.setAttribute('role', 'tab');
+            btn.innerHTML = sec.querySelector('.title').innerHTML + '<span class="count">' + sec.querySelector('.count').textContent.replace(' photos', '') + '</span>';
+            btn.addEventListener('click', () => { activeTab = i; showTab(); });
+            tabBar.appendChild(btn);
+        });
+
+        function showTab() {
+            [...tabBar.children].forEach((b, i) => b.setAttribute('aria-selected', i === activeTab));
+            sections.forEach((sec, i) => sec.classList.toggle('active', i === activeTab));
+        }
+
+        function layout() {
+            document.body.classList.toggle('tabs-mode', desktop.matches);
+            sections.forEach(sec => {
+                const d = sec.querySelector('details');
+                d.open = desktop.matches;
+            });
+            showTab();
+        }
+
+        desktop.addEventListener('change', layout);
+        layout();
     </script>
 </body>
 </html>
