@@ -97,6 +97,50 @@
             color: var(--primary-red);
         }
 
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--dark-gray);
+            list-style: none;
+            padding: 0.5rem 0;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            min-width: 150px;
+        }
+
+        .dropdown-menu li {
+            padding: 0;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: var(--white);
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .dropdown-menu a:hover {
+            background: var(--primary-red);
+            color: var(--white);
+        }
+
+        .dropdown-menu a::after {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown:focus-within .dropdown-menu {
+            display: block;
+        }
+
         .mobile-menu {
             display: none;
             flex-direction: column;
@@ -207,7 +251,13 @@
                 <li><a href="../index.html#schedule">Schedule</a></li>
                 <li><a href="../index.html#location">Location</a></li>
                 <li><a href="../index.html#contact">Contact</a></li>
-                <li><a href="photos.html">Photos & Videos</a></li>
+                <li class="dropdown">
+                    <a href="photos.html" class="dropdown-toggle">Photos & Videos ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="mobile-menu">
                 <span></span>
