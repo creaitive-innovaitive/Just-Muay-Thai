@@ -207,6 +207,36 @@
             background: var(--black);
         }
 
+        .video-item[hidden] {
+            display: none;
+        }
+
+        .video-loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 2rem 0;
+            color: var(--light-gray);
+        }
+
+        .video-loader[hidden] {
+            display: none;
+        }
+
+        .spinner {
+            width: 22px;
+            height: 22px;
+            border: 3px solid var(--dark-gray);
+            border-top-color: var(--primary-red);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         /* Footer */
         footer {
             background: var(--black);
@@ -329,126 +359,130 @@
     <section class="video-section">
         <div class="video-grid">
             <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+                <video controls preload="none" poster="../posters/v01.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449134194_8386357541393394_460590770004910978_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+                <video controls preload="none" poster="../posters/v02.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/449735087_8602445489771523_6970416586609724992_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+                <video controls preload="none" poster="../posters/v03.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/449766488_25860944753552339_3986269567407457902_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+                <video controls preload="none" poster="../posters/v04.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449766689_7811780122233652_3965163399364202148_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v05.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/449767321_8015482555165072_1554542091494439380_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v06.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/449767722_7929503837096214_7386898792030589657_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v07.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449795191_7602232249896630_8881314227285901417_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v08.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449795786_7573026656142303_5111505713921340775_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v09.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449800722_7515138361947533_7046656938786986917_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v10.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449841882_25809526388694563_4457441059328932922_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 480 / 848">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v11.jpg" style="aspect-ratio: 480 / 848">
                     <source src="../Gym Shows/449845865_7748447965271350_477690732004228103_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v12.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449865452_8303607126340692_8377364729620782053_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v13.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449866559_7786246274790856_7824739773225266202_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 640 / 368">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v14.jpg" style="aspect-ratio: 640 / 368">
                     <source src="../Gym Shows/449885885_25880384668274014_2586085176555305997_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v15.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/449888065_7744136748995874_4367349323484245748_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v16.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/Kids/449770797_7987090391348483_4502776620712188002_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v17.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Gym Shows/Kids/449884205_7699920853460140_6755884124630157867_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v18.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Training/449667897_25913678631610781_1809567772980809175_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v19.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Training/449767595_7998416090277591_32111363682400063_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="video-item">
-                <video controls preload="metadata" style="aspect-ratio: 368 / 640">
+            <div class="video-item" hidden>
+                <video controls preload="none" data-poster="../posters/v20.jpg" style="aspect-ratio: 368 / 640">
                     <source src="../Training/449888729_7844043412354816_8238626393790950610_n.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
+        <div class="video-loader" id="video-loader" hidden>
+            <span class="spinner"></span> Loading more videos&hellip;
+        </div>
+        <div id="video-sentinel"></div>
     </section>
 
     <!-- Footer -->
@@ -466,6 +500,48 @@
         });
 
         navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+        // Reveal videos four at a time as the page is scrolled; posters load first so each box fills in quickly
+        const BATCH = 4;
+        const loader = document.getElementById('video-loader');
+        const sentinel = document.getElementById('video-sentinel');
+        let busy = false;
+
+        function revealNext() {
+            const next = [...document.querySelectorAll('.video-item[hidden]')].slice(0, BATCH);
+            if (!next.length) {
+                observer.disconnect();
+                return;
+            }
+            busy = true;
+            loader.hidden = false;
+            Promise.all(next.map(item => new Promise(res => {
+                const v = item.querySelector('video');
+                const img = new Image();
+                img.onload = img.onerror = res;
+                img.src = v.dataset.poster;
+            }))).then(() => {
+                next.forEach(item => {
+                    const v = item.querySelector('video');
+                    v.poster = v.dataset.poster;
+                    item.hidden = false;
+                });
+                loader.hidden = true;
+                busy = false;
+                if (document.querySelector('.video-item[hidden]')) {
+                    // re-check in case the sentinel is still on screen
+                    observer.unobserve(sentinel);
+                    observer.observe(sentinel);
+                } else {
+                    observer.disconnect();
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting && !busy) revealNext();
+        }, { rootMargin: '300px' });
+        observer.observe(sentinel);
     </script>
 </body>
 </html>

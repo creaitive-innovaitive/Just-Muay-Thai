@@ -209,18 +209,60 @@
             display: block;
         }
 
-        .gallery-section + .gallery-section {
-            padding-top: 0;
+        .gallery-section {
+            padding: 1rem 2rem;
         }
 
-        .gallery-heading {
+        .gallery-section:first-of-type {
+            padding-top: 3rem;
+        }
+
+        .gallery-group {
+            background: var(--dark-gray);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .gallery-group summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            list-style: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .gallery-group summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .gallery-group summary::after {
+            content: '+';
             font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--white);
+            line-height: 1;
+            color: var(--primary-red);
+            margin-left: auto;
         }
 
-        .gallery-heading span {
+        .gallery-group[open] summary::after {
+            content: '−';
+        }
+
+        .gallery-group summary .title span {
             color: var(--primary-red);
+        }
+
+        .gallery-group summary .count {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--light-gray);
+        }
+
+        .gallery-group .gallery-grid {
+            padding: 0 1.5rem 1.5rem;
         }
 
         .gallery-grid.portrait .gallery-item {
@@ -347,393 +389,419 @@
 
     <!-- Gallery Section -->
     <section class="gallery-section">
-        <h2 class="gallery-heading"><span>World Amateur Championships</span> 2026</h2>
-        <div class="gallery-grid portrait">
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/0ce6dea2-7959-4f59-afcc-40250542fa46.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+        <details class="gallery-group">
+            <summary><span class="title">World Amateur Championships <span>2026</span></span><span class="count">30 photos</span></summary>
+            <div class="gallery-grid portrait">
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/0ce6dea2-7959-4f59-afcc-40250542fa46.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/1fa3ccbd-460f-48c8-8fc4-73236c311360.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/24e44c9e-9156-4aab-b628-04e5d0f0c65b.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/31d57b21-a847-4fea-8c11-1da799e8113c.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/3fa06f1d-9a26-454a-b44d-23a2ad513a21.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/492e52e2-b176-4aff-9012-66ec5bd4acdc.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/57256384-ac22-4520-b3ca-4febb056fdcd.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/5ffbe7a1-47f4-4fef-bacf-7c463ffd4993.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/6338c356-60ff-4e89-b699-e7b02832fb39.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/6a0bc555-867b-4576-883a-f968d2da5cc1.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/6f46ee34-d0ce-46d8-a7e5-d03886f29e71.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/788674ca-07ea-4f49-939e-8c12190f14e7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/8129c252-ab37-45ab-bb93-090aea787663.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/8516b7d7-bc78-4279-a52f-a31a639e44d7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/87d96610-3b9c-44cd-940b-d6e30709578e.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/8935fa7e-00f2-456d-b0d6-a8d9341b5598.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/8d8449c4-19a5-4f96-ac6e-97fd4f956df7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/8e3e8477-ff6c-4bac-987d-95641ce57333.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/a3b3f89c-90e8-4dcc-adad-f6b986b31eeb.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/b15708e0-79d3-453a-ac75-c2ed60d0ac6a.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/b7c91cc9-0473-46a0-bf70-8fcda03bad88.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/b890e23b-5062-43dd-905d-373f499e641d.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/c603adf9-74c7-4740-8fab-55cdbd4279f9.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/d215ec3e-6cbf-4a70-a099-b3349a5e14e7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/d4e9cc17-701a-444e-8a86-618508bc8b9d.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/dd7f58ee-442e-4fac-90ea-cd6b054ff09a.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/e1cb4ed2-5868-405e-8c52-5c692c6dce38.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/f9251c84-44b4-4b53-822a-0c3bfa8e3234.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/fb1a1034-bad8-4460-b6a0-f6fb8f60cbc7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - World Amateur Championships 2026/fd979f59-429e-4518-a815-c4dd98cedddd.jpeg" alt="World Amateur Championships 2026" loading="lazy">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/1fa3ccbd-460f-48c8-8fc4-73236c311360.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/24e44c9e-9156-4aab-b628-04e5d0f0c65b.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/31d57b21-a847-4fea-8c11-1da799e8113c.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/3fa06f1d-9a26-454a-b44d-23a2ad513a21.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/492e52e2-b176-4aff-9012-66ec5bd4acdc.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/57256384-ac22-4520-b3ca-4febb056fdcd.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/5ffbe7a1-47f4-4fef-bacf-7c463ffd4993.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/6338c356-60ff-4e89-b699-e7b02832fb39.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/6a0bc555-867b-4576-883a-f968d2da5cc1.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/6f46ee34-d0ce-46d8-a7e5-d03886f29e71.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/788674ca-07ea-4f49-939e-8c12190f14e7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/8129c252-ab37-45ab-bb93-090aea787663.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/8516b7d7-bc78-4279-a52f-a31a639e44d7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/87d96610-3b9c-44cd-940b-d6e30709578e.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/8935fa7e-00f2-456d-b0d6-a8d9341b5598.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/8d8449c4-19a5-4f96-ac6e-97fd4f956df7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/8e3e8477-ff6c-4bac-987d-95641ce57333.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/a3b3f89c-90e8-4dcc-adad-f6b986b31eeb.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/b15708e0-79d3-453a-ac75-c2ed60d0ac6a.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/b7c91cc9-0473-46a0-bf70-8fcda03bad88.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/b890e23b-5062-43dd-905d-373f499e641d.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/c603adf9-74c7-4740-8fab-55cdbd4279f9.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/d215ec3e-6cbf-4a70-a099-b3349a5e14e7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/d4e9cc17-701a-444e-8a86-618508bc8b9d.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/dd7f58ee-442e-4fac-90ea-cd6b054ff09a.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/e1cb4ed2-5868-405e-8c52-5c692c6dce38.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/f9251c84-44b4-4b53-822a-0c3bfa8e3234.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/fb1a1034-bad8-4460-b6a0-f6fb8f60cbc7.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - World Amateur Championships 2026/fd979f59-429e-4518-a815-c4dd98cedddd.jpeg" alt="World Amateur Championships 2026" loading="lazy">
-            </div>
-        </div>
+        </details>
     </section>
 
     <section class="gallery-section">
-        <h2 class="gallery-heading">Fights, <span>Champions</span> &amp; Training</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="../Champions/Champions (2).jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Champions.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448758154_485970857241800_810218169276523280_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448791966_416472044727039_2932242670653217223_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448804211_1151624756166979_2854405735769058713_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448804409_842051317803916_2425396943191872131_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448828896_7806718349363412_5086754160376883257_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448847315_491037853603105_5640360837193546590_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448849727_1019016959681877_7620784644765720063_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448849731_1413117226061081_7826362676796573788_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448851182_971566514979634_4171202113275030822_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448852800_1092632751834769_3721155204794623012_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448853325_901951318358509_4626443383510275650_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448863993_1467335643922001_4051289645922610601_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448863994_1470247200521938_4966013925804259873_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448865694_503978045415786_4838230045544957158_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448865697_700209672232289_7192764096249985905_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448872610_1138867044010404_3518593470789751732_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448872610_350036754615775_4301666734377717400_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448872613_525757843142173_1739997876028431842_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448875302_402112642219939_5225810760198391898_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448880832_372536412143705_7681664934784635577_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448893885_500591736044862_3581368056274324836_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448897895_843171951058129_67361500295251511_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448897900_502409505551477_6724433387026999546_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448899531_1232062551095501_7541145233402236964_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448903442_1011491197226342_3074510573705344512_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448903442_2819210008229659_6883168506155544704_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448904886_1743744816367018_3745207363039248646_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448908461_7209553985813496_7017163134277118519_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448917175_1319026148821784_4454503727265013002_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/448992842_1189974989089606_4296345125123342639_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449033658_357736797343693_2352349550104323690_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449047446_1971886596557699_4307817098053997476_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449048862_1641190226647179_8490319509469524517_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449049070_846398526855420_1375113292961056442_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449050200_1655278788633162_2280767652246905133_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449053584_431636119843892_5787754929207075242_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449057499_1665374160931857_3196107794069754282_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449082341_3715315825387476_7093593392863738116_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449179673_392738293265860_2519619775569069947_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449216414_1167375017815583_2827104092471614773_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449290411_481919850916886_396328221318864304_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449292504_1010558450646256_8008794150783993071_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449307859_1027055792461282_4672991477030833161_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449307862_1535184120402827_5820786936677097898_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449308875_433039279602153_3625491520610884397_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449309844_1571712767022195_1810253541236242520_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449310228_1638780130305308_1121091481094452780_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449314210_6999232313512894_3180532008881663624_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449316216_1697365814337786_5864730505502027923_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449316216_826621502403941_9012262444844651214_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449317779_1179272223199974_3621867043596682135_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449317923_465476236181434_1865040278604104855_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449317930_1169530954299664_1190598130512848044_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449321695_948383810372159_3227171702404714314_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449322435_1006407057364686_3267307179429451481_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449324016_1134514544293502_1245371259095686529_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449330195_838439951527309_8673485404718714846_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449361027_967537785154450_3103906975725651732_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449385857_836651551907969_2867544901759653087_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449395346_805958661305909_6072025088702249413_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449399279_1531264867740346_6632089893444966546_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449410204_1455642328403442_5737045388966768318_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449412633_8007925252605085_9195521901943571125_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449412634_841498970756356_835180597347344157_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449450690_443695048622336_4887194859748467282_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449454325_1517325989213659_6867447607244353728_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449461206_2402086963455581_2865771030988843209_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449471098_1155317082185968_970622919588649003_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449476060_787831840221739_4907109792374952128_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449482869_456506833802606_6632235622457260758_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449493567_346001885209682_5903680338026621993_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449493567_357021960509943_5614826610617536423_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449501645_479286137836386_8287922997909000889_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449507300_3661876140728949_3562891297636279372_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449521969_1036083097702662_747260355584345272_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Harvey Nicholls - K1 Rules/449618920_1518861742068352_1000952618027054524_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/James Rea - ISKA Open Championship - Silver/James Rea - ISKA Open Championship - Silver.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/448796667_487834540592782_7409114639425050769_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/448896914_801500685404209_7394267302017742112_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/448897901_1122206695508163_5544400032307415457_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/449224807_795458462761313_2693617161038672988_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Gym Shows/Kids/448841051_1120695305697791_7236662043408623599_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Gym Shows/Kids/448846467_461754453257065_2840717951010268209_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Gym Shows/Kids/448872382_354982307628868_7255232285323322666_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Gym Shows/Kids/449050200_3707022802899544_712561514364990161_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/448805439_3709064259335908_1242477755175954166_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/448839892_861501359340819_2194316716809808028_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/448875302_887878096689874_1613644519983856269_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/448880829_2794476194058833_251346916521367593_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/448886076_1937047843402861_2867543737862413398_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/448897895_1907010496482708_2477240546350005333_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/449030469_353895824403182_6520717077143879301_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../Mark's Images/449505558_495955936431166_6173390467060965882_n.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="../img/JMT - Mark Ramuee.jpg" alt="Just Muay Thai photo" loading="lazy">
-            </div>
-        </div>
+        <details class="gallery-group">
+            <summary><span class="title">Tournaments</span><span class="count">83 photos</span></summary>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../Champions/Champions (2).jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Champions.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448758154_485970857241800_810218169276523280_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448791966_416472044727039_2932242670653217223_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448804211_1151624756166979_2854405735769058713_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448804409_842051317803916_2425396943191872131_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448828896_7806718349363412_5086754160376883257_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448847315_491037853603105_5640360837193546590_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448849727_1019016959681877_7620784644765720063_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448849731_1413117226061081_7826362676796573788_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448851182_971566514979634_4171202113275030822_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448852800_1092632751834769_3721155204794623012_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448853325_901951318358509_4626443383510275650_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448863993_1467335643922001_4051289645922610601_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448863994_1470247200521938_4966013925804259873_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448865694_503978045415786_4838230045544957158_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448865697_700209672232289_7192764096249985905_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448872610_1138867044010404_3518593470789751732_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448872610_350036754615775_4301666734377717400_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448872613_525757843142173_1739997876028431842_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448875302_402112642219939_5225810760198391898_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448880832_372536412143705_7681664934784635577_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448893885_500591736044862_3581368056274324836_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448897895_843171951058129_67361500295251511_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448897900_502409505551477_6724433387026999546_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448899531_1232062551095501_7541145233402236964_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448903442_1011491197226342_3074510573705344512_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448903442_2819210008229659_6883168506155544704_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448904886_1743744816367018_3745207363039248646_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448908461_7209553985813496_7017163134277118519_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448917175_1319026148821784_4454503727265013002_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/448992842_1189974989089606_4296345125123342639_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449033658_357736797343693_2352349550104323690_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449047446_1971886596557699_4307817098053997476_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449048862_1641190226647179_8490319509469524517_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449049070_846398526855420_1375113292961056442_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449050200_1655278788633162_2280767652246905133_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449053584_431636119843892_5787754929207075242_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449057499_1665374160931857_3196107794069754282_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449082341_3715315825387476_7093593392863738116_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449179673_392738293265860_2519619775569069947_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449216414_1167375017815583_2827104092471614773_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449290411_481919850916886_396328221318864304_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449292504_1010558450646256_8008794150783993071_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449307859_1027055792461282_4672991477030833161_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449307862_1535184120402827_5820786936677097898_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449308875_433039279602153_3625491520610884397_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449309844_1571712767022195_1810253541236242520_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449310228_1638780130305308_1121091481094452780_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449314210_6999232313512894_3180532008881663624_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449316216_1697365814337786_5864730505502027923_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449316216_826621502403941_9012262444844651214_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449317779_1179272223199974_3621867043596682135_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449317923_465476236181434_1865040278604104855_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449317930_1169530954299664_1190598130512848044_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449321695_948383810372159_3227171702404714314_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449322435_1006407057364686_3267307179429451481_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449324016_1134514544293502_1245371259095686529_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449330195_838439951527309_8673485404718714846_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449361027_967537785154450_3103906975725651732_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449385857_836651551907969_2867544901759653087_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449395346_805958661305909_6072025088702249413_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449399279_1531264867740346_6632089893444966546_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449410204_1455642328403442_5737045388966768318_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449412633_8007925252605085_9195521901943571125_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449412634_841498970756356_835180597347344157_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449450690_443695048622336_4887194859748467282_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449454325_1517325989213659_6867447607244353728_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449461206_2402086963455581_2865771030988843209_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449471098_1155317082185968_970622919588649003_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449476060_787831840221739_4907109792374952128_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449482869_456506833802606_6632235622457260758_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449493567_346001885209682_5903680338026621993_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449493567_357021960509943_5614826610617536423_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449501645_479286137836386_8287922997909000889_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449507300_3661876140728949_3562891297636279372_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449521969_1036083097702662_747260355584345272_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Harvey Nicholls - K1 Rules/449618920_1518861742068352_1000952618027054524_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/James Rea - ISKA Open Championship - Silver/James Rea - ISKA Open Championship - Silver.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/448796667_487834540592782_7409114639425050769_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/448896914_801500685404209_7394267302017742112_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/448897901_1122206695508163_5544400032307415457_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Champions/Zack Yeomans - ISKA Open Championship - Gold/449224807_795458462761313_2693617161038672988_n.jpg" alt="Just Muay Thai tournament photo" loading="lazy">
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section class="gallery-section">
+        <details class="gallery-group">
+            <summary><span class="title">In the Gym</span><span class="count">4 photos</span></summary>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../Gym Shows/Kids/448841051_1120695305697791_7236662043408623599_n.jpg" alt="Just Muay Thai gym photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Gym Shows/Kids/448846467_461754453257065_2840717951010268209_n.jpg" alt="Just Muay Thai gym photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Gym Shows/Kids/448872382_354982307628868_7255232285323322666_n.jpg" alt="Just Muay Thai gym photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Gym Shows/Kids/449050200_3707022802899544_712561514364990161_n.jpg" alt="Just Muay Thai gym photo" loading="lazy">
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section class="gallery-section">
+        <details class="gallery-group">
+            <summary><span class="title">Other</span><span class="count">11 photos</span></summary>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../img/JMT Logo - white.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/448805439_3709064259335908_1242477755175954166_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/448839892_861501359340819_2194316716809808028_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/448875302_887878096689874_1613644519983856269_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/448880829_2794476194058833_251346916521367593_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/448886076_1937047843402861_2867543737862413398_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/448897895_1907010496482708_2477240546350005333_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/449030469_353895824403182_6520717077143879301_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Mark's Images/449505558_495955936431166_6173390467060965882_n.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT - Mark Ramuee.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/JMT Family.jpg" alt="Just Muay Thai photo" loading="lazy">
+                </div>
+            </div>
+        </details>
     </section>
 
     <!-- Footer -->
